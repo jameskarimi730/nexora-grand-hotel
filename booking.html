@@ -1,3 +1,133 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Book a Room | Nexora Grand Hotel</title><link rel="stylesheet" href="style.css"><script src="config.js"></script><script defer src="app.js"></script></head><body>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA <small>GRAND HOTEL</small></span></a><nav><a target="_blank" href="index.html">Home</a><a target="_blank" href="rooms.html">Rooms</a><a class="current" href="booking.html">Book a stay</a><a target="_blank" href="reservations.html">My reservation</a><a target="_blank" href="about.html">About</a><a target="_blank" href="contact.html">Contact</a></nav><a class="nav-cta" target="_blank" href="rooms.html">View rooms ↗</a></header>
-<main><section class="page-hero"><p class="eyebrow">MAKE YOURSELF AT HOME</p><h1>Book your stay</h1><p>Enter your details and dates to check availability.</p></section><section class="form-layout section-wrap"><div class="form-panel"><form id="booking-form"><div class="form-grid"><label>Full name<input name="guestName" required minlength="2" maxlength="80" autocomplete="name" placeholder="Your full name"></label><label>Email address<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com"></label><label>Phone number<input name="phone" required maxlength="24" autocomplete="tel" placeholder="+254 7XX XXX XXX"></label><label>Room type<select name="roomType" id="roomType" required><option value="">Choose a room</option><option value="standard">Standard Room — KSh 3,500/night</option><option value="deluxe">Deluxe Room — KSh 5,500/night</option><option value="executive">Executive Suite — KSh 8,500/night</option></select></label><label>Check-in date<input type="date" name="checkIn" id="checkIn" required></label><label>Check-out date<input type="date" name="checkOut" id="checkOut" required></label></div><div class="price-preview" id="pricePreview">Select a room and dates to estimate your stay.</div><button class="btn btn-gold submit-btn" type="submit">Check availability & book →</button><p class="small-print">Your booking request is confirmed only when the system returns a booking reference. Payment is not collected on this website yet.</p><div id="bookingMessage" class="message" role="status"></div></form></div><aside class="side-note"><p class="eyebrow">A FEW DETAILS</p><h2>Your stay,<br><em>made simple.</em></h2><p>Submit your guest details and preferred dates. The booking service checks the room inventory before creating your reservation.</p><div class="side-rule"></div><p><b>Need help?</b><br>Visit our <a href="contact.html">contact page</a> for assistance.</p></aside></section></main><footer class="footer"><div class="footer-bottom">© <span data-year></span> Nexora Grand Hotel. All rights reserved.</div></footer></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Room | Nexora Grand Hotel</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script defer src="app.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="brand-mark">N</span>
+<span>NEXORA <small>GRAND HOTEL</small></span>
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="rooms.html">Rooms</a>
+<a class="current" href="booking.html">Book a stay</a>
+<a href="reservations.html">My reservation</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<a class="nav-cta" href="rooms.html">View rooms ↗</a>
+</header>
+
+<main>
+
+<section class="page-hero">
+<p class="eyebrow">MAKE YOURSELF AT HOME</p>
+<h1>Book your stay</h1>
+<p>Enter your details and dates to check availability.</p>
+</section>
+
+<section class="form-layout section-wrap">
+
+<div class="form-panel">
+
+<form id="booking-form">
+
+<div class="form-grid">
+
+<label>
+Full name
+<input name="guestName" required minlength="2" maxlength="80" autocomplete="name" placeholder="Your full name">
+</label>
+
+<label>
+Email address
+<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com">
+</label>
+
+<label>
+Phone number
+<input name="phone" required maxlength="24" autocomplete="tel" placeholder="+254 7XX XXX XXX">
+</label>
+
+<label>
+Room type
+<select name="roomType" id="roomType" required>
+<option value="">Choose a room</option>
+<option value="standard">Standard Room — KSh 3,500/night</option>
+<option value="deluxe">Deluxe Room — KSh 5,500/night</option>
+<option value="executive">Executive Suite — KSh 8,500/night</option>
+</select>
+</label>
+
+<label>
+Check-in date
+<input type="date" name="checkIn" id="checkIn" required>
+</label>
+
+<label>
+Check-out date
+<input type="date" name="checkOut" id="checkOut" required>
+</label>
+
+</div>
+
+<div class="price-preview" id="pricePreview">
+Select a room and dates to estimate your stay.
+</div>
+
+<button class="btn btn-gold submit-btn" type="submit">
+Check availability & book →
+</button>
+
+<p class="small-print">
+We look forward to welcoming you to Nexora Grand Hotel.
+</p>
+
+<div id="bookingMessage" class="message" role="status"></div>
+
+</form>
+</div>
+
+<aside class="side-note">
+
+<p class="eyebrow">A FEW DETAILS</p>
+
+<h2>Your stay,<br><em>made simple.</em></h2>
+
+<p>
+Submit your guest details and preferred dates.
+Our booking service checks room availability before creating your reservation.
+</p>
+
+<div class="side-rule"></div>
+
+<p>
+<b>Need help?</b><br>
+Visit our <a href="contact.html">contact page</a> for assistance.
+</p>
+
+</aside>
+
+</section>
+</main>
+
+<footer class="footer">
+<div class="footer-bottom">
+© <span data-year></span> Nexora Grand Hotel. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>
